@@ -12,6 +12,7 @@ function pictureConstructor(description, horns, imageUrl, keyword, name) {
   pictureArray.push(this)
 }
 
+let $.pictures = $('. pictures');
 
 $.ajax('./data/page-1.json',)
   .then( data => {
@@ -21,5 +22,6 @@ $.ajax('./data/page-1.json',)
   console.log(pictures)
   
   });
+  return data;
 });
 
