@@ -17,6 +17,7 @@ $.ajax('/data/page-1.json')
     photoKeyword();
   });
 
+
 function PictureConstructor(object) {
   this.description = object.description;
   this.horns = object.horns;
@@ -45,6 +46,8 @@ let displayPhotos = () => {
   });
 };
 
+  let template = $('#template').html();
+  let html = Mustache.render(template, { :value.description})
 
 // This part was heavily carried by CODE REVIEW, but we now understand what is going on here.
 let photoKeyword = () => {
