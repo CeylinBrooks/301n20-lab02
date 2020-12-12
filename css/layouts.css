@@ -1,0 +1,27 @@
+
+
+section {
+    float: left;
+  margin: 20px;
+  display: inline;
+  overflow: auto;
+  height: 500px;
+  width: 300px;
+}
+
+p {
+  width: 200px;
+  text-align: center;
+}
+h2 {
+  width: 200px;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
+
+footer {
+  clear: both;
+}
