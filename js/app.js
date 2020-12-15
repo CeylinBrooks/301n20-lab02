@@ -28,6 +28,7 @@ $.ajax('./data/page-2.json')
     photoKeyword(pictureArray2);
   });
 
+
 function PictureConstructor(object, whichArray) {
   this.description = object.description;
   this.horns = object.horns;
@@ -59,6 +60,8 @@ let displayPhotos = (arr, picturePage) => {
   $('.page2').hide();
 };
 
+  let template = $('#template').html();
+  let html = Mustache.render(template, { :value.description})
 
 // This part was heavily carried by CODE REVIEW, but we now understand what is going on here.
 let photoKeyword = (arr) => {
