@@ -60,8 +60,8 @@ let displayPhotos = (arr, picturePage) => {
   $('.page2').hide();
 };
 
-  let template = $('#template').html();
-  let html = Mustache.render(template, { :value.description})
+  // let template = $('#template').html();
+  // let html = Mustache.render(template, { :value.description})
 
 // This part was heavily carried by CODE REVIEW, but we now understand what is going on here.
 let photoKeyword = (arr) => {
@@ -93,7 +93,7 @@ $('#sorting').on('change', function () {
   if (keyword === 'alphabetical') {
     displayPhotos(sortAb(pictureArray), 'page1');
     displayPhotos(sortAb(pictureArray2), 'page2');
-    $('main').
+    $('main')
   } else if (keyword === 'horns') {
     displayPhotos(sortHorns(pictureArray), 'page1');
     displayPhotos(sortHorns(pictureArray2), 'page2');
