@@ -46,19 +46,6 @@ let displayPhotos = (arr, picturePage) => {
   // Here we run a for each method on our array in order to itterate through each item and apply it to our DOM
   arr.forEach(value => {
     //Apply photo template element to a let variable so that we can create multiple.
-<<<<<<< HEAD
-    let $newTemplate = $(`<section>${template}</section>`);
-    console.log('Value ', value.description);
-    $newTemplate.find('img').attr('src', value.imageUrl);
-    $newTemplate.find('img').attr('alt', value.name);
-    $newTemplate.find('h2').text(value.name);
-    $newTemplate.addClass(value.keyword);
-    let template = $('#template').html();
-    let html = Mustache.render(template, { :value.description})
-    // $newTemplate.find('p').text(value.description);
-    $('main').append($newTemplate);
-    console.log($newTemplate.html());
-=======
     let $newTemp = $('#Temp1').html();
     let $render = Mustache.render($newTemp, {
       keyword: value.keyword,
@@ -69,11 +56,12 @@ let displayPhotos = (arr, picturePage) => {
       description: value.description
     });
     $('main').append($render);
->>>>>>> 0d7a58f374e2e56238d6f790c1eefc580e0e18ff
   });
   $('.page2').hide();
 };
 
+  let template = $('#template').html();
+  let html = Mustache.render(template, { :value.description})
 
 // This part was heavily carried by CODE REVIEW, but we now understand what is going on here.
 let photoKeyword = (arr) => {
