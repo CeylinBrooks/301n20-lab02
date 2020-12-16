@@ -40,14 +40,14 @@ let displayPhotos = () => {
     $newTemplate.find('img').attr('alt', value.name);
     $newTemplate.find('h2').text(value.name);
     $newTemplate.addClass(value.keyword);
-    $newTemplate.find('p').text(value.description);
+    let template = $('#template').html();
+    let html = Mustache.render(template, { :value.description})
+    // $newTemplate.find('p').text(value.description);
     $('main').append($newTemplate);
     console.log($newTemplate.html());
   });
 };
 
-  let template = $('#template').html();
-  let html = Mustache.render(template, { :value.description})
 
 // This part was heavily carried by CODE REVIEW, but we now understand what is going on here.
 let photoKeyword = () => {
