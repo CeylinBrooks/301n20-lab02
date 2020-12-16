@@ -9,4 +9,4 @@ Finish time: _____
 Actual time needed to complete: _____
 
 
-Worked on this project beside my partner Ceylin, and was helped out heavily by Code Review, and was also assisted by Jennor.
+Worked on this project beside my partner Ceylin, and was helped out heavily by Code Review, and was also assisted by Jenner.
