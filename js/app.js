@@ -93,6 +93,7 @@ $('#sorting').on('change', function () {
   if (keyword === 'alphabetical') {
     displayPhotos(sortAb(pictureArray), 'page1');
     displayPhotos(sortAb(pictureArray2), 'page2');
+
     $('main');
   } else if (keyword === 'horns') {
     displayPhotos(sortHorns(pictureArray), 'page1');

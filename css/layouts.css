@@ -1,6 +1,8 @@
 * {
   background-color: rgb(92, 176, 179);
+
   font-family: 'Pacifico', cursive;
+
 }
 
 section {
@@ -10,6 +12,8 @@ section {
   overflow: auto;
   height: 600px;
   width: 300px;
+  align-items: center;
+
 }
 
 
@@ -17,22 +21,30 @@ header {
   text-align: center;
 }
 
+/* #Temp1{
+  margin-left: 300px;
+} */
+
 p {
   width: 200px;
   text-align: center;
-  
+
+  padding: 30px;
+
 }
 
 h2 {
   width: 200px;
   margin-left: 30px;
   text-align: center;
+  margin-left: 100px;
 }
 
 img {
   width: 200px;
   margin-left: 30px;
   border:solid black;
+  margin-left: 90px ;
 }
 
 footer {
