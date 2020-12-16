@@ -17,14 +17,18 @@ header {
 p {
   width: 200px;
   text-align: center;
+  
 }
+
 h2 {
   width: 200px;
+  margin-left: 30px;
   text-align: center;
 }
 
 img {
   width: 200px;
+  margin-left: 30px;
   border:solid black;
 }
 
