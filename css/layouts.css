@@ -1,11 +1,13 @@
 * {
   background-color: rgb(92, 176, 179);
-  font-family: 'Courgette', cursive;
+
+  font-family: 'Pacifico', cursive;
+
 }
 
 section {
-    float: left;
-  margin: 20px;
+  float: left;
+  margin-left: 150px;
   display: inline;
   overflow: auto;
   height: 600px;
@@ -26,16 +28,21 @@ header {
 p {
   width: 200px;
   text-align: center;
+
   padding: 30px;
+
 }
+
 h2 {
   width: 200px;
+  margin-left: 30px;
   text-align: center;
   margin-left: 100px;
 }
 
 img {
   width: 200px;
+  margin-left: 30px;
   border:solid black;
   margin-left: 90px ;
 }
